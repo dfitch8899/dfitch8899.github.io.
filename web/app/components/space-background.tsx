@@ -47,7 +47,7 @@ const LAYER_PARALLAX = [0.015, 0.04, 0.08];
 
 const SATURN = {
   cx: 0.5,
-  cy: 1.18,
+  cy: 1.05,
   lightAngle: -2.3,
   rotSpeed: 0.012,
   bandCount: 24,
@@ -733,7 +733,7 @@ export function SpaceBackground() {
       asteroids = createAsteroids(w, h);
       saturnX = w * SATURN.cx;
       saturnY = h * SATURN.cy;
-      saturnR = Math.max(280, Math.min(520, h * 0.48));
+      saturnR = Math.max(240, Math.min(520, h * 0.48));
     }
 
     let scrollY = 0;
