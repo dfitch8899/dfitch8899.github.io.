@@ -61,7 +61,7 @@ const jsonLd = {
   email: "d.fitch8899@gmail.com",
   sameAs: [
     "https://github.com/dfitch8899",
-    "https://linkedin.com/in/devinfitch",
+    "https://www.linkedin.com/in/devin-fitch-b17700352/",
   ],
   knowsAbout: [
     "React",

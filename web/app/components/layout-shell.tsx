@@ -103,7 +103,7 @@ export function LayoutShell({ children }: { children: ReactNode }) {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/devinfitch"
+              href="https://www.linkedin.com/in/devin-fitch-b17700352/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-4 transition-colors hover:text-[color:var(--color-foreground)] hover:underline"
