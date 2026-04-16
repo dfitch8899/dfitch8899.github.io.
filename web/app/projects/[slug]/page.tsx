@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects, getProjectBySlug, TAG_LABELS } from "../../data/projects";
+import { FreelanceGallery } from "../../components/freelance-gallery";
 import type { Metadata } from "next";
 
 interface PageProps {
@@ -144,6 +145,21 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             ))}
           </ul>
         </section>
+
+        {project.slug === "freelance-web-designs" && (
+          <>
+            <div className="case-study-divider" />
+            <section className="mb-10 page-enter page-enter-delay-4" aria-labelledby="gallery-heading">
+              <h2 id="gallery-heading" className="case-study-heading">
+                All 19 Sites
+              </h2>
+              <p className="mb-4 text-sm leading-relaxed text-[color:var(--color-muted)]">
+                Each card represents a fully custom site — hover to see the palette, filter by market below.
+              </p>
+              <FreelanceGallery />
+            </section>
+          </>
+        )}
 
         <div className="case-study-divider" />
 
