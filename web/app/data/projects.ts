@@ -33,6 +33,39 @@ export const TAG_LABELS: Record<Tag, string> = {
 
 export const projects: Project[] = [
   {
+    slug: "freelance-web-designs",
+    title: "Freelance Web Designs – Athens & Belpre",
+    summary:
+      "19 fully custom website redesign concepts for local businesses in Athens and Belpre, Ohio — each researched, designed, and built from scratch with AI-generated media, tailored brand identities, and pitch-ready demo packages.",
+    description: [
+      "A freelance initiative where I identified local businesses with outdated or nonexistent websites, researched their brand, and built polished redesign concepts to pitch directly to owners.",
+      "The Athens batch covered 6 businesses on and around Court Street — Smiling Skull Saloon, Uptown Dog, Stephen's, Casa Nueva, Athena Cinema, and Bagel Street Deli — each with a fully distinct visual identity matched to the business's personality.",
+      "The Belpre/Washington County batch expanded to 13 more local businesses including Dragon House, Q-Wagon BBQ, Village Cakery, Boathouse BBQ, The Ohio Redwood, and others across the region.",
+      "Each site featured AI-generated hero images and background videos (Veo 3, Nano Banana), custom SVG logos, mobile-responsive layouts, full menus or service listings, and a demo disclaimer banner ready for pitching.",
+      "Personalized outreach emails were drafted and sent for each business, leading with a specific pain point hook — a dead domain, a 2012 Wix template, or a missing web presence entirely.",
+    ],
+    role: "Sole designer and developer — research, design, code, AI media generation, and client outreach",
+    techStack: [
+      "HTML / CSS",
+      "JavaScript",
+      "Veo 3 (video generation)",
+      "Nano Banana (image generation)",
+      "SVG animation",
+      "Responsive design",
+    ],
+    tags: ["frontend", "web"],
+    links: {},
+    highlights: [
+      "19 fully custom sites built across two Ohio markets — Athens and Belpre/Washington County",
+      "AI-generated hero videos and images integrated into every site via Veo 3 and Nano Banana",
+      "Each site features a unique brand identity: typography, color palette, SVG logo, and tone matched to the business",
+      "Personalized pitch emails sent to each business with demo video attachments",
+      "Sites cover restaurants, bars, a cinema, a pet hotel, a bakery, a quilt shop, BBQ joints, and a law enforcement office",
+      "Meigs County Sheriff's Office redesign included interactive MapLibre map, dark/light mode, staff directory, and Square payment integration",
+    ],
+    featured: true,
+  },
+  {
     slug: "aipron",
     title: "AIpron – AI Cooking Assistant",
     summary:
