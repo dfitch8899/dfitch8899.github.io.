@@ -185,8 +185,9 @@ export function FreelanceGallery() {
         {filtered.length} site{filtered.length !== 1 ? "s" : ""}
         {active !== "all"
           ? ` · ${BATCH_LABELS[active as keyof typeof BATCH_LABELS]}`
-          : ""}
-        . Hover a card to interact, or click View to open full screen.
+          : ""}.
+        {" "}These are unsolicited concept redesigns built for experience — not affiliated with, commissioned by, or sold to any of the businesses shown.
+        {" "}Hover a card to interact, or click View to open full screen.
       </p>
     </div>
   );

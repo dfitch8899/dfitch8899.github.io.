@@ -36,9 +36,9 @@ export const projects: Project[] = [
     slug: "freelance-web-designs",
     title: "Freelance Web Designs – Athens & Belpre",
     summary:
-      "19 fully custom website redesign concepts for local businesses in Athens and Belpre, Ohio — each researched, designed, and built from scratch with AI-generated media, tailored brand identities, and pitch-ready demo packages.",
+      "19 unsolicited website redesign concepts built for experience — researched, designed, and coded from scratch for real local businesses in Athens and Belpre, Ohio. None were sold. Built to sharpen full-stack design and outreach skills.",
     description: [
-      "A freelance initiative where I identified local businesses with outdated or nonexistent websites, researched their brand, and built polished redesign concepts to pitch directly to owners.",
+      "A personal project to sharpen my design and development skills. I identified local businesses with outdated or nonexistent websites, researched each brand deeply, and built polished redesign concepts entirely on my own initiative. None of the designs were sold or commissioned — these were built for experience and to practice the full workflow from research to pitch.",
       "The Athens batch covered 6 businesses on and around Court Street — Smiling Skull Saloon, Uptown Dog, Stephen's, Casa Nueva, Athena Cinema, and Bagel Street Deli — each with a fully distinct visual identity matched to the business's personality.",
       "The Belpre/Washington County batch expanded to 13 more local businesses including Dragon House, Q-Wagon BBQ, Village Cakery, Boathouse BBQ, The Ohio Redwood, and others across the region.",
       "Each site featured AI-generated hero images and background videos (Veo 3, Nano Banana), custom SVG logos, mobile-responsive layouts, full menus or service listings, and a demo disclaimer banner ready for pitching.",

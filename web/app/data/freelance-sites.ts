@@ -16,7 +16,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Dive Bar",
     palette: ["#0a0a0a", "#cc1a1a", "#b84a0a"],
     accentLabel: "Dark · Blood Red · Biker",
-    url: "https://www.perplexity.ai/computer/a/smiling-skull-saloon-FdvRoQTzQ_GgoZUNKONWwA",
+    url: "https://dfitch8899.github.io/freelance-concepts/smiling-skull/",
     batch: "athens",
   },
   {
@@ -25,7 +25,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Pet Hotel & Grooming",
     palette: ["#f5f0e8", "#7a9e7e", "#c07a50"],
     accentLabel: "Cream · Sage · Boutique",
-    url: "https://www.perplexity.ai/computer/a/uptown-dog-h38T.ZtbRJG1Wp8bs9DDgQ",
+    url: "https://dfitch8899.github.io/freelance-concepts/uptown-dog/",
     batch: "athens",
   },
   {
@@ -34,7 +34,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Cocktail Bar",
     palette: ["#0d0b09", "#c49a28", "#1a1208"],
     accentLabel: "Near-Black · Amber · Speakeasy",
-    url: "https://www.perplexity.ai/computer/a/stephen-s-bar-qRyx1XmuQ_2NXMUzQMnkGg",
+    url: "https://dfitch8899.github.io/freelance-concepts/stephens/",
     batch: "athens",
   },
   {
@@ -43,7 +43,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Cantina & Co-op",
     palette: ["#b85c38", "#d4a017", "#2d5a27"],
     accentLabel: "Terra Cotta · Gold · Bohemian",
-    url: "https://www.perplexity.ai/computer/a/casa-nueva-DwACDVquTl6qAAAxs3y0DQ",
+    url: "https://dfitch8899.github.io/freelance-concepts/casa-nueva/",
     batch: "athens",
   },
   {
@@ -52,7 +52,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Art House Cinema",
     palette: ["#0a0a0a", "#6b1a2a", "#c9a227"],
     accentLabel: "True Black · Burgundy · Gold",
-    url: "https://www.perplexity.ai/computer/a/athena-cinema-m7ynQE36QPC2TyVlxtSBYQ",
+    url: "https://dfitch8899.github.io/freelance-concepts/athena-cinema/",
     batch: "athens",
   },
   {
@@ -61,7 +61,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Deli",
     palette: ["#f5f0e0", "#d4a017", "#8b1a1a"],
     accentLabel: "Cream · Mustard · Punchy Red",
-    url: "https://www.perplexity.ai/computer/a/bagel-street-deli-ALlrtSihTCiyg4cqbXtLEA",
+    url: "https://dfitch8899.github.io/freelance-concepts/bagel-street/",
     batch: "athens",
   },
 
@@ -72,7 +72,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Chinese Restaurant",
     palette: ["#0a0a0a", "#8b0000", "#1a5c3a"],
     accentLabel: "Black · Ruby · Jade",
-    url: "https://www.perplexity.ai/computer/a/dragon-house-Vik7Nk4fR1a6SdO3y6Tx3g",
+    url: "https://dfitch8899.github.io/freelance-concepts/dragon-house/",
     batch: "belpre",
   },
   {
@@ -81,7 +81,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "BBQ Food Truck",
     palette: ["#1a0a00", "#c44b0a", "#f5c842"],
     accentLabel: "Charcoal · Ember · Smoke Yellow",
-    url: "https://www.perplexity.ai/computer/a/q-wagon-bbq-vQ6WgldHTYuvj8w3eK2Jiw",
+    url: "https://dfitch8899.github.io/freelance-concepts/q-wagon/",
     batch: "belpre",
   },
   {
@@ -90,7 +90,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Bakery",
     palette: ["#fdf6ee", "#d4789a", "#8b5e3c"],
     accentLabel: "Warm White · Dusty Rose · Mocha",
-    url: "https://www.perplexity.ai/computer/a/village-cakery-uCNALK1tRxGgFJZGgf1blQ",
+    url: "https://dfitch8899.github.io/freelance-concepts/village-cakery/",
     batch: "belpre",
   },
   {
@@ -99,7 +99,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Quilt & Fabric Shop",
     palette: ["#f5ece0", "#8b6914", "#4a3728"],
     accentLabel: "Linen · Harvest Gold · Walnut",
-    url: "https://www.perplexity.ai/computer/a/neff-s-country-loft-Tk9WSdBuRCCnU2brfMykCA",
+    url: "https://dfitch8899.github.io/freelance-concepts/neffs-loft/",
     batch: "belpre",
   },
   {
@@ -108,7 +108,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "BBQ Restaurant",
     palette: ["#0d1a0d", "#8b2500", "#c49a28"],
     accentLabel: "Dark Green · Rust · Gold",
-    url: "https://www.perplexity.ai/computer/a/boathouse-bbq-zwORScKDQviIVpbAbg76gw",
+    url: "https://dfitch8899.github.io/freelance-concepts/boathouse-bbq/",
     batch: "belpre",
   },
   {
@@ -117,7 +117,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Hot Dog Stand",
     palette: ["#1a0a00", "#d44000", "#f5c842"],
     accentLabel: "Dark · Red-Orange · Mustard",
-    url: "https://www.perplexity.ai/computer/a/der-dog-haus-m.xuvp3YTjWUyL44xFGz5g",
+    url: "https://dfitch8899.github.io/freelance-concepts/der-dog-haus/",
     batch: "belpre",
   },
   {
@@ -126,7 +126,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "American Diner",
     palette: ["#1a0505", "#8b1a1a", "#c49a28"],
     accentLabel: "Deep Burgundy · Amber · Heritage",
-    url: "https://www.perplexity.ai/computer/a/the-ohio-redwood-mvxUw5L9TVSxrky25mVSYQ",
+    url: "https://dfitch8899.github.io/freelance-concepts/ohio-redwood/",
     batch: "belpre",
   },
   {
@@ -135,7 +135,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Hardware Store",
     palette: ["#0a0d1a", "#1a4a8b", "#c44b0a"],
     accentLabel: "Navy · Steel Blue · Orange",
-    url: "https://www.perplexity.ai/computer/a/belpre-hardware-HPiLIcpiQV.MvaDBC9pHNA",
+    url: "https://dfitch8899.github.io/freelance-concepts/belpre-hardware/",
     batch: "belpre",
   },
   {
@@ -144,7 +144,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Historic Hotel",
     palette: ["#0d0a05", "#2a1a0a", "#c49a28"],
     accentLabel: "Near-Black · Dark Wood · Gold",
-    url: "https://www.perplexity.ai/computer/a/blennerhassett-hotel-RpDJfcbORdm0Z9zEZI_CWg",
+    url: "https://dfitch8899.github.io/freelance-concepts/blennerhassett/",
     batch: "belpre",
   },
   {
@@ -153,7 +153,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Pizza Restaurant",
     palette: ["#1a0000", "#8b1a00", "#f5c842"],
     accentLabel: "Dark · Tomato Red · Parmesan",
-    url: "https://www.perplexity.ai/computer/a/napoli-s-pizza-pSLeaM4fT8WDeA.ifvaYqQ",
+    url: "https://dfitch8899.github.io/freelance-concepts/napolis-pizza/",
     batch: "belpre",
   },
   {
@@ -162,7 +162,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Family Diner",
     palette: ["#fdf6ee", "#2a4a8b", "#c44b0a"],
     accentLabel: "Cream · Navy · Warm Orange",
-    url: "https://www.perplexity.ai/computer/a/schultz-s-restaurant-xsw2SK5gRjObJdeq5wsi4w",
+    url: "https://dfitch8899.github.io/freelance-concepts/schultzs/",
     batch: "belpre",
   },
   {
@@ -171,7 +171,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Pizza Chain",
     palette: ["#1a0000", "#8b1a00", "#f5a800"],
     accentLabel: "Dark · Deep Red · Caesar Gold",
-    url: "https://www.perplexity.ai/computer/a/little-caesars-belpre-NTNstDEFSZmQc6l5xCkJSw",
+    url: "https://dfitch8899.github.io/freelance-concepts/little-caesars-belpre/",
     batch: "belpre",
   },
 
@@ -182,7 +182,7 @@ export const freelanceSites: FreelanceSite[] = [
     category: "Law Enforcement",
     palette: ["#08090c", "#1b2a4a", "#c4952a"],
     accentLabel: "Near-Black · Navy · Sheriff Gold",
-    url: "https://www.perplexity.ai/computer/a/meigs-county-sheriff-ttPOYamdQT6ZEOaqUSiptg",
+    url: "https://dfitch8899.github.io/freelance-concepts/meigs-sheriff/",
     batch: "bonus",
   },
 ];
