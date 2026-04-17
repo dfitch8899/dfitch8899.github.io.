@@ -742,8 +742,10 @@ export function SpaceBackground() {
     let rafId = 0;
     let lastMeteor = 0;
     let prevT = 0;
+    let paused = false;
 
     function render(timestamp: number) {
+      if (paused) return;
       const t = timestamp * 0.001;
       const dt = prevT > 0 ? Math.min(t - prevT, 0.1) : 1 / 60;
       prevT = t;
@@ -814,15 +816,23 @@ export function SpaceBackground() {
       rafId = requestAnimationFrame(render);
     }
 
+    // Pause animation when tab is hidden to save CPU/GPU
+    const onVisibility = () => {
+      paused = document.hidden;
+      if (!paused) rafId = requestAnimationFrame(render);
+    };
+
     resize();
     window.addEventListener("resize", resize);
     window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("visibilitychange", onVisibility);
     rafId = requestAnimationFrame(render);
 
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener("resize", resize);
       window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, []);
 

@@ -47,11 +47,10 @@ export const staggerContainerSlow: Variants = {
 };
 
 export const fadeInUp: Variants = {
-  hidden: { opacity: 0, y: 32, filter: "blur(6px)" },
+  hidden: { opacity: 0, y: 32 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: { duration: 0.7, ease: EASE_OUT_EXPO },
   },
 };
@@ -93,11 +92,10 @@ export const fadeInRight: Variants = {
 };
 
 export const scaleIn: Variants = {
-  hidden: { opacity: 0, scale: 0.88, filter: "blur(4px)" },
+  hidden: { opacity: 0, scale: 0.88 },
   visible: {
     opacity: 1,
     scale: 1,
-    filter: "blur(0px)",
     transition: { duration: 0.6, ease: EASE_OUT_BACK },
   },
 };

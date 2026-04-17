@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRef, type FormEvent } from "react";
 import {
   aboutCopy,
   contactCopy,
@@ -391,6 +392,21 @@ export function TimelineSection() {
 
 export function ContactSection() {
   const prefersReducedMotion = useReducedMotion();
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const name = nameRef.current?.value ?? "";
+    const email = emailRef.current?.value ?? "";
+    const message = messageRef.current?.value ?? "";
+    const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    );
+    window.location.href = `mailto:d.fitch8899@gmail.com?subject=${subject}&body=${body}`;
+  }
 
   return (
     <section className="section pb-20" aria-labelledby="contact-heading">
@@ -446,8 +462,7 @@ export function ContactSection() {
 
           <motion.form
             className="card-soft border border-slate-800/60 p-6 text-sm"
-            action="mailto:d.fitch8899@gmail.com"
-            method="post"
+            onSubmit={handleSubmit}
             variants={scaleIn}
           >
             <div className="grid gap-4">
@@ -458,6 +473,7 @@ export function ContactSection() {
                 <input
                   id="name"
                   name="name"
+                  ref={nameRef}
                   className="input-glass"
                   autoComplete="name"
                   required
@@ -471,6 +487,7 @@ export function ContactSection() {
                   id="email"
                   name="email"
                   type="email"
+                  ref={emailRef}
                   className="input-glass"
                   autoComplete="email"
                   required
@@ -484,6 +501,7 @@ export function ContactSection() {
                   id="message"
                   name="message"
                   rows={4}
+                  ref={messageRef}
                   className="input-glass resize-none"
                   placeholder="What would you like to talk about?"
                   required
