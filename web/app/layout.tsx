@@ -26,25 +26,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Devin Fitch — Software Developer",
+    default: "Devin Fitch — Full-Stack & AI Agent Engineer",
     template: "%s | Devin Fitch",
   },
   description:
-    "Full-stack developer building responsive web apps, backend services, and developer tools with React, Next.js, Python, Node.js, and C++.",
+    "Full-stack developer specializing in AI agentic automation — autonomous engineering agents, agent infrastructure on AWS, and production AI products built with React, Next.js, Python, and Node.js.",
   metadataBase: new URL("https://devinfitch.me"),
   openGraph: {
-    title: "Devin Fitch — Software Developer",
+    title: "Devin Fitch — Full-Stack & AI Agent Engineer",
     description:
-      "Full-stack developer building responsive web apps, backend services, and developer tools.",
+      "Full-stack developer specializing in AI agentic automation — autonomous agents, agent infrastructure, and production AI products.",
     type: "website",
     url: "https://devinfitch.me",
     siteName: "Devin Fitch",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Devin Fitch — Software Developer",
+    title: "Devin Fitch — Full-Stack & AI Agent Engineer",
     description:
-      "Full-stack developer building responsive web apps, backend services, and developer tools.",
+      "Full-stack developer specializing in AI agentic automation — autonomous agents, agent infrastructure, and production AI products.",
   },
   robots: {
     index: true,
@@ -60,13 +60,22 @@ const jsonLd = {
   "@type": "Person",
   name: "Devin Fitch",
   url: "https://devinfitch.me",
-  jobTitle: "Software Developer",
+  jobTitle: "Full-Stack & AI Agent Engineer",
   email: "d.fitch8899@gmail.com",
+  worksFor: [
+    { "@type": "Organization", name: "AI OWL" },
+    { "@type": "Organization", name: "Flash AI" },
+  ],
   sameAs: [
     "https://github.com/dfitch8899",
     "https://www.linkedin.com/in/devin-fitch-b17700352/",
   ],
   knowsAbout: [
+    "AI Agents",
+    "Agentic Automation",
+    "LLM Orchestration",
+    "AWS ECS Fargate",
+    "Docker",
     "React",
     "Next.js",
     "TypeScript",

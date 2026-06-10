@@ -71,7 +71,7 @@ export function LayoutShell({ children }: { children: ReactNode }) {
             </Link>
             {/* Mobile hamburger */}
             <button
-              className="flex h-8 w-8 flex-col items-center justify-center gap-1.5 rounded-md md:hidden"
+              className="flex h-8 w-8 flex-col items-center justify-center gap-1.5 rounded-md transition-colors hover:bg-white/5 md:hidden"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
@@ -154,7 +154,12 @@ export function LayoutShell({ children }: { children: ReactNode }) {
           aria-hidden="true"
         />
         <div className="container-max flex flex-col items-center gap-4 text-center text-xs text-[color:var(--color-muted)] md:flex-row md:justify-between md:text-left">
-          <p>&copy; {new Date().getFullYear()} Devin Fitch. Built with Next.js &amp; Tailwind CSS.</p>
+          <div className="space-y-1">
+            <p>&copy; {new Date().getFullYear()} Devin Fitch. Built with Next.js &amp; Tailwind CSS.</p>
+            <p className="text-[color:var(--color-subtle)]">
+              Engineering at AI OWL &middot; Flash AI
+            </p>
+          </div>
           <div className="flex items-center gap-5">
             <a
               href="mailto:d.fitch8899@gmail.com"
