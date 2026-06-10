@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Devin Fitch — a full-stack developer building web apps, APIs, and developer tools with React, Next.js, Python, Node.js, and C++.",
+    "Learn about Devin Fitch — a full-stack developer at AI OWL and Flash AI specializing in AI agentic automation, autonomous agents, and production web applications.",
 };
 
 export default function AboutPage() {

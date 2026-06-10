@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRef, type FormEvent } from "react";
 import {
   aboutCopy,
+  agenticCopy,
   contactCopy,
   heroCopy,
   skillsCopy,
@@ -84,6 +85,26 @@ export function HeroSection() {
             {heroCopy.subtitle}
           </motion.p>
 
+          <motion.p
+            className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-[color:var(--color-subtle)]"
+            variants={heroItem}
+          >
+            <span className="font-medium uppercase tracking-[0.14em] text-[color:var(--color-muted)]">
+              Currently
+            </span>
+            {heroCopy.currentRoles.map((role, i) => (
+              <span key={role} className="flex items-center gap-2.5">
+                {i > 0 && (
+                  <span
+                    className="h-1 w-1 rounded-full bg-[color:var(--color-accent-soft)] opacity-60"
+                    aria-hidden="true"
+                  />
+                )}
+                {role}
+              </span>
+            ))}
+          </motion.p>
+
           <motion.div
             className="flex flex-wrap gap-3.5 pt-1"
             variants={heroItem}
@@ -99,6 +120,81 @@ export function HeroSection() {
       </div>
 
       <div className="hero-line" aria-hidden="true" />
+    </section>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  AI & Agentic Automation                                            */
+/* ------------------------------------------------------------------ */
+
+export function AgenticSection() {
+  const prefersReducedMotion = useReducedMotion();
+
+  return (
+    <section className="section" aria-labelledby="agentic-heading">
+      <div className="container-max">
+        <motion.div
+          variants={staggerContainer}
+          initial={prefersReducedMotion ? false : "hidden"}
+          whileInView={prefersReducedMotion ? undefined : "visible"}
+          viewport={viewportOnce}
+        >
+          <motion.div className="mb-10 max-w-xl space-y-3" variants={fadeInUp}>
+            <p className="section-heading-eyebrow">{agenticCopy.eyebrow}</p>
+            <h2
+              id="agentic-heading"
+              className="section-heading-title text-[color:var(--color-foreground)]"
+            >
+              {agenticCopy.title}
+            </h2>
+            <p className="text-sm leading-relaxed text-[color:var(--color-muted)]">
+              {agenticCopy.lede}
+            </p>
+          </motion.div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {agenticCopy.cards.map((card) => (
+              <motion.div
+                key={card.label}
+                className="card-soft group border border-slate-800/60 p-5 text-sm text-[color:var(--color-muted)]"
+                variants={scaleIn}
+                whileHover={
+                  prefersReducedMotion
+                    ? undefined
+                    : {
+                        borderColor: "rgba(249,115,22,0.6)",
+                        translateY: -5,
+                        boxShadow: "0 24px 60px rgba(0,0,0,0.8), 0 0 25px rgba(251,191,36,0.12), inset 0 1px 0 rgba(255,255,255,0.05)",
+                      }
+                }
+                transition={{ type: "spring", stiffness: 300, damping: 22 }}
+              >
+                <p
+                  className="mb-3 font-mono text-[0.68rem] text-[color:var(--color-accent-soft)] opacity-80"
+                  style={{ fontFamily: "var(--font-geist-mono)" }}
+                  aria-hidden="true"
+                >
+                  {card.mono}
+                </p>
+                <p className="mb-2 font-display text-sm font-semibold text-[color:var(--color-foreground)]">
+                  {card.label}
+                </p>
+                <p className="text-sm leading-relaxed">{card.detail}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div className="mt-10" variants={fadeInUpSubtle}>
+            <Link
+              href="/projects/hermes-agent"
+              className="btn-secondary inline-flex cursor-pointer text-sm"
+            >
+              {agenticCopy.cta} &rarr;
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }
@@ -171,13 +267,13 @@ export function SkillsPreviewSection() {
     <section className="section" aria-labelledby="skills-preview-heading">
       <div className="container-max">
         <motion.div
-          className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between"
+          className="flex flex-col gap-8"
           variants={staggerContainer}
           initial={prefersReducedMotion ? false : "hidden"}
           whileInView={prefersReducedMotion ? undefined : "visible"}
           viewport={viewportMore}
         >
-          <motion.div className="max-w-sm space-y-3" variants={fadeInUp}>
+          <motion.div className="max-w-xl space-y-3" variants={fadeInUp}>
             <p className="section-heading-eyebrow">{skillsCopy.title}</p>
             <h2
               id="skills-preview-heading"
@@ -186,12 +282,13 @@ export function SkillsPreviewSection() {
               Broad skills, sharp focus.
             </h2>
             <p className="text-sm leading-relaxed text-[color:var(--color-muted)]">
-              I work across the stack — from polished React interfaces to
-              Node.js APIs to systems-level C++. Here&apos;s what I reach for most.
+              I work across the stack — from agentic AI systems to polished
+              React interfaces to Node.js APIs to systems-level C++.
+              Here&apos;s what I reach for most.
             </p>
           </motion.div>
 
-          <div className="grid flex-1 gap-4 md:grid-cols-3">
+          <div className="grid flex-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {skillsCopy.columns.map((column) => (
               <motion.div
                 key={column.label}
@@ -254,7 +351,7 @@ export function SkillsSection() {
             </h2>
           </motion.div>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {skillsCopy.columns.map((column) => (
               <motion.div
                 key={column.label}
@@ -362,14 +459,25 @@ export function TimelineSection() {
           <div className="relative ml-4 border-l border-slate-700/40 pl-6">
             {timelineCopy.events.map((event, i) => (
               <motion.div
-                key={event.year}
-                className="relative mb-10 last:mb-0"
+                key={event.label}
+                className={`relative last:mb-0 ${event.current ? "mb-7" : "mb-10"}`}
                 variants={fadeInLeft}
                 custom={i}
               >
-                <span className="timeline-dot absolute -left-[31px] top-1 h-3 w-3 rounded-full border-2 border-[color:var(--color-accent-soft)] bg-[color:var(--color-background)]" />
-                <p className="text-xs font-semibold uppercase tracking-widest text-[color:var(--color-accent)]">
+                <span
+                  className={`timeline-dot absolute -left-[31px] top-1 h-3 w-3 rounded-full border-2 border-[color:var(--color-accent-soft)] ${
+                    event.current
+                      ? "bg-[color:var(--color-accent-soft)] shadow-[0_0_12px_rgba(249,115,22,0.7)]"
+                      : "bg-[color:var(--color-background)]"
+                  }`}
+                />
+                <p className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--color-accent)]">
                   {event.year}
+                  {event.current && (
+                    <span className="badge-pill px-2 py-0.5 text-[0.6rem] font-medium normal-case tracking-normal text-[color:var(--color-muted)]">
+                      Present
+                    </span>
+                  )}
                 </p>
                 <h3 className="mt-1.5 font-display text-sm font-semibold text-[color:var(--color-foreground)]">
                   {event.label}

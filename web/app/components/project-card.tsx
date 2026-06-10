@@ -29,7 +29,11 @@ export function ProjectCard({ project }: { project: Project }) {
 
   return (
     <motion.article
-      className="card-soft card-tilt group relative flex flex-col border border-slate-800/60 p-5 transition-colors"
+      className={`card-soft card-tilt group relative flex flex-col border p-5 transition-colors ${
+        project.flagship
+          ? "border-[rgba(251,191,36,0.35)]"
+          : "border-slate-800/60"
+      }`}
       style={{ perspective: 800 }}
       animate={
         prefersReducedMotion
@@ -64,10 +68,15 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.title}
         </h3>
         <div className="flex flex-wrap gap-1.5">
+          {project.flagship && (
+            <span className="rounded-full border border-[rgba(251,191,36,0.4)] bg-black/30 px-2 py-0.5 text-[0.63rem] font-semibold text-[color:var(--color-accent)] backdrop-blur-sm">
+              Flagship
+            </span>
+          )}
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-slate-700/50 bg-black/30 px-2 py-0.5 text-[0.63rem] font-medium text-[color:var(--color-muted)] backdrop-blur-sm"
+              className="rounded-full border border-slate-700/50 bg-black/30 px-2 py-0.5 text-[0.63rem] font-medium text-[color:var(--color-muted)] backdrop-blur-sm transition-colors group-hover:border-slate-600/70"
             >
               {TAG_LABELS[tag]}
             </span>
@@ -100,7 +109,10 @@ export function ProjectCard({ project }: { project: Project }) {
           href={`/projects/${project.slug}`}
           className="text-sm font-semibold text-[color:var(--color-accent)] underline-offset-4 transition-colors hover:underline"
         >
-          Read case study &rarr;
+          Read case study{" "}
+          <span className="inline-block transition-transform group-hover:translate-x-1">
+            &rarr;
+          </span>
         </Link>
         {project.links.repo && (
           <a
