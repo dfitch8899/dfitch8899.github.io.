@@ -50,6 +50,10 @@ function SiteCard({ site, index }: { site: FreelanceSite; index: number }) {
 
       {/* Iframe preview */}
       <div className="relative overflow-hidden" style={{ paddingBottom: "62%" }}>
+        <div
+          className="pointer-events-none absolute inset-0 z-[5] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]"
+          aria-hidden="true"
+        />
         {site.url ? (
           <>
             <iframe
@@ -154,7 +158,7 @@ export function FreelanceGallery() {
           <button
             key={f.key}
             onClick={() => setActive(f.key)}
-            className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-all ${
+            className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-[color,background-color,border-color,box-shadow,scale] active:scale-[0.96] ${
               active === f.key
                 ? "bg-[color:var(--color-accent)] text-black shadow-[0_0_14px_rgba(251,191,36,0.3)]"
                 : "border border-slate-700/50 bg-black/30 text-[color:var(--color-muted)] hover:border-slate-600 hover:text-[color:var(--color-foreground)]"
