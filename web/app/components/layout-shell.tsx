@@ -71,21 +71,21 @@ export function LayoutShell({ children }: { children: ReactNode }) {
             </Link>
             {/* Mobile hamburger */}
             <button
-              className="flex h-8 w-8 flex-col items-center justify-center gap-1.5 rounded-md transition-colors hover:bg-white/5 md:hidden"
+              className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg transition-[background-color,scale] hover:bg-white/5 active:scale-[0.96] md:hidden"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
             >
               <span
-                className="block h-0.5 w-5 rounded-full bg-[color:var(--color-muted)] transition-all duration-200"
+                className="block h-0.5 w-5 rounded-full bg-[color:var(--color-muted)] transition-[transform,opacity] duration-200"
                 style={mobileOpen ? { transform: "translateY(4px) rotate(45deg)" } : {}}
               />
               <span
-                className="block h-0.5 w-5 rounded-full bg-[color:var(--color-muted)] transition-all duration-200"
+                className="block h-0.5 w-5 rounded-full bg-[color:var(--color-muted)] transition-[transform,opacity] duration-200"
                 style={mobileOpen ? { opacity: 0 } : {}}
               />
               <span
-                className="block h-0.5 w-5 rounded-full bg-[color:var(--color-muted)] transition-all duration-200"
+                className="block h-0.5 w-5 rounded-full bg-[color:var(--color-muted)] transition-[transform,opacity] duration-200"
                 style={mobileOpen ? { transform: "translateY(-4px) rotate(-45deg)" } : {}}
               />
             </button>
@@ -98,7 +98,7 @@ export function LayoutShell({ children }: { children: ReactNode }) {
         {mobileOpen && (
           <motion.div
             key="mobile-nav"
-            className="pointer-events-auto fixed inset-x-0 top-[72px] z-30 mx-4 overflow-hidden rounded-xl border border-[color:var(--glass-border)] md:hidden"
+            className="pointer-events-auto fixed inset-x-0 top-[72px] z-30 mx-4 overflow-hidden rounded-2xl border border-[color:var(--glass-border)] md:hidden"
             style={{ background: "rgba(8,5,2,0.92)", backdropFilter: "blur(24px)" }}
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}

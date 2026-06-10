@@ -34,7 +34,7 @@ export function ProjectsList() {
       >
         <button
           onClick={() => setActiveTag(null)}
-          className={`cursor-pointer rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
+          className={`cursor-pointer rounded-full px-3.5 py-1.5 text-xs font-medium transition-[color,background-color,border-color,box-shadow,scale] active:scale-[0.96] ${
             activeTag === null
               ? "bg-[color:var(--color-accent)] text-[color:var(--color-background)] shadow-[0_0_16px_rgba(251,191,36,0.3)]"
               : "border border-slate-700/50 bg-black/30 text-[color:var(--color-muted)] backdrop-blur-sm hover:border-slate-600 hover:text-[color:var(--color-foreground)]"
@@ -46,7 +46,7 @@ export function ProjectsList() {
           <button
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-            className={`cursor-pointer rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
+            className={`cursor-pointer rounded-full px-3.5 py-1.5 text-xs font-medium transition-[color,background-color,border-color,box-shadow,scale] active:scale-[0.96] ${
               activeTag === tag
                 ? "bg-[color:var(--color-accent)] text-[color:var(--color-background)] shadow-[0_0_16px_rgba(251,191,36,0.3)]"
                 : "border border-slate-700/50 bg-black/30 text-[color:var(--color-muted)] backdrop-blur-sm hover:border-slate-600 hover:text-[color:var(--color-foreground)]"

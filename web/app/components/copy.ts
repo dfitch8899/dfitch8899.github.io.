@@ -1,6 +1,6 @@
 export const heroCopy = {
   eyebrow: "Full-Stack & AI Agent Engineer",
-  title: "Hi, I'm Devin. I build software that ships itself.",
+  title: "Hi, I'm Devin. I build things that work.",
   subtitle:
     "Full-stack developer specializing in AI agentic automation — from an autonomous engineering agent on AWS that picks up Jira tickets and ships pull requests, to production AI products at two companies.",
   currentRoles: ["AI OWL", "Flash AI", "CS + AI @ Ohio University"],
