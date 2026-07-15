@@ -140,34 +140,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "deal-assist",
-    title: "Deal Assist — AI Toolkit for Real-Estate Agents",
-    summary:
-      "An AI-powered tools platform for real-estate professionals — drafting inspection responses, remedy requests, and more — taken from rough prototype to a branded, demo-ready product.",
-    description: [
-      "Deal Assist is a suite of AI tools built for working real-estate agents, designed to take the tedious paperwork moments of a deal — inspection responses, remedy requests, and similar documents — and turn them into a few guided clicks.",
-      "I carried the platform from early prototype through a full rebrand and demo preparation: product naming, polished UI, hosting setup, and the feature work to make each tool genuinely useful to an agent mid-transaction.",
-      "Each tool wraps an LLM workflow in a purpose-built interface, so agents get domain-correct drafts without ever writing a prompt.",
-    ],
-    role: "Sole developer — product build-out, AI tool design, rebrand, hosting, and demo prep",
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "LLM APIs",
-      "Tailwind CSS",
-    ],
-    tags: ["ai-ml", "web", "frontend", "backend"],
-    links: {},
-    highlights: [
-      "Suite of purpose-built AI tools for real-estate workflows — no prompt-writing required",
-      "Inspection-response and remedy-drafting tools that produce domain-correct documents",
-      "Took the product from prototype to branded, hosted, demo-ready platform",
-      "Designed for non-technical users: guided flows over raw AI chat",
-    ],
-    featured: false,
-  },
-  {
     slug: "nudge",
     title: "Nudge — Email Outreach Automation",
     summary:
